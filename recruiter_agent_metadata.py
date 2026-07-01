@@ -122,21 +122,21 @@ companies = [
     },
 ]
 
+#-----commenting out for evaluation--------------
 
+# if __name__=="__main__":
+#     for company in companies:
 
-if __name__=="__main__":
-    for company in companies:
+#         config = RunnableConfig(
+#             tags=[company["outreach_wave"]],
+#             metadata={
+#                 "company": company["company"],
+#                 "company_type": company["company_type"],
+#             },
+#         )
 
-        config = RunnableConfig(
-            tags=[company["outreach_wave"]],
-            metadata={
-                "company": company["company"],
-                "company_type": company["company_type"],
-            },
-        )
+#         result=app.invoke(company,config=config)
 
-        result=app.invoke(company,config=config)
-
-        print("="*70)
-        print(company["company"])
-        print(result["email"])
+#         print("="*70)
+#         print(company["company"])
+#         print(result["email"])
