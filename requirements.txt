@@ -1,6 +1,6 @@
 langgraph 
 langchain
-langcjain-huggingface
+langchain-huggingface
 python-dotenv
 langsmith
 langchain-google-genai
